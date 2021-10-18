@@ -1,0 +1,72 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+
+  width: 50%;
+  margin: 0 auto;
+
+  background-color: lightcoral;
+}
+
+.header{
+  grid-column: 1 / -1;
+  height: 100px;
+
+  border: 2px solid black;
+  background-color: white;
+
+  text-align: center;
+}
+
+.left{
+  grid-column: 1 / 4;
+
+  border: 2px solid black;
+  background-color: white;
+}
+
+.main{
+  grid-column: 4 / 10;
+
+  border: 2px solid black;
+  background-color: white;
+}
+
+figure{
+  float: left;
+  margin: 2px 10px 0 2px;
+}
+
+.pheebs{
+  max-width: 100px;
+}
+
+.pheebs, .imgText{
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
+.right{
+  grid-column: 10 / -1;
+
+  border: 2px solid black;
+  background-color: white;
+}
+
+.footer{
+  grid-column: 1 / -1;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+  margin: 5px;
+}
